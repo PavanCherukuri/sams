@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'M2_HOME') {
-                    bat 'mvn clean install -PautoInstallBundle'
+                    bat 'mvn -U clean install -PautoInstallBundle'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage ('uploading package') {
             steps {
                 withMaven(maven : 'M2_HOME') {
-                    bat 'mvn clean install -PautoInstallPackage'
+                    bat 'mvn -U clean install -PautoInstallPackage'
                 }
             }
         }
