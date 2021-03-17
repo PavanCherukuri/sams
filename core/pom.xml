@@ -148,6 +148,13 @@ Bundle-DocURL:
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.models.api</artifactId>
         </dependency>
+     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-imaging -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-imaging</artifactId>
+    <version>1.0-R1534292</version>
+</dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
